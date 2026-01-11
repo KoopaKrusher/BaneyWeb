@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braden & Aaryn | November 7, 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">B & A</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#travel-stay">Travel & Stay</a></li>
+                <li><a href="#registry">Registry</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="photos/hero.JPEG" alt="Braden and Aaryn">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tagline">We're Getting Married!</p>
+            <h1 class="hero-names">Braden & Aaryn</h1>
+            <p class="hero-date">11.07.2026</p>
+        </div>
+    </section>
+
+    <!-- Ceremony Details Section -->
+    <section id="ceremony" class="ceremony-section">
+        <div class="content-wrapper">
+            <div class="ceremony-image">
+                <img src="photos/ceremony.JPEG" alt="Ceremony Venue">
+            </div>
+            <div class="ceremony-details">
+                <h2>Ceremony</h2>
+                <div class="detail-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <p>2162 S Fork Farm Ln<br>West Jefferson, NC 28694</p>
+                </div>
+                <div class="detail-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <p>4:00 PM</p>
+                </div>
+                <div class="reception-note">
+                    <p>Reception to follow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attire Section -->
+    <section id="attire" class="attire-section">
+        <div class="content-wrapper-narrow">
+            <h2>Attire</h2>
+            <p class="attire-subtitle">Semi-formal</p>
+            <div class="attire-description">
+                <p>We invite you to dress in semi-formal attire. Think cocktail dresses, dressy separates, suits, or dress shirts with slacks. Wear what makes you feel comfortable and confident!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story CTA Section -->
+    <section id="story-cta" class="story-cta-section">
+        <div class="story-cta-image">
+            <img src="photos/story-cta.jpeg" alt="Our Story">
+            <div class="story-cta-overlay"></div>
+        </div>
+        <div class="story-cta-content">
+            <h2>Our Love Story</h2>
+            <p>See how it all started</p>
+            <a href="#our-story" class="btn btn-primary">Read Our Story</a>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp-cta" class="rsvp-cta-section">
+        <div class="rsvp-cta-image">
+            <img src="photos/rsvp.jpeg" alt="RSVP">
+            <div class="rsvp-cta-overlay"></div>
+        </div>
+        <div class="rsvp-cta-content">
+            <h2>We Hope You Can Make It</h2>
+            <p>Please let us know if you'll be joining us</p>
+            <button class="btn btn-primary" id="open-rsvp-btn">RSVP</button>
+        </div>
+    </section>
+
+    <!-- RSVP Modal -->
+    <div id="rsvp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests *</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="dietary">Dietary Restrictions</label>
+                    <textarea id="dietary" name="dietary" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message for the Couple</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit RSVP</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </div>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="our-story-section">
+        <div class="content-wrapper-narrow">
+            <h2>Our Story</h2>
+            <div class="story-content">
+                <p>Every love story is special, but ours is our favorite.</p>
+                <p>We met at Booneshine Brewing, where we both work. We were practically strangers—just coworkers passing by—until one shift beer changed everything. That conversation was the kind where everything else fades away, and we both just knew.</p>
+                <p>Our love grew over travels to new places, late-night card games, and binge-watching our latest favorite shows. When it came time to propose, Braden chose our favorite spot: Grandfather Winery. It was intimate, special, and freezing cold—but perfect.</p>
+                <p>Now we're writing the next chapter together, and we can't wait to celebrate with all of you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel & Stay Section -->
+    <section id="travel-stay" class="travel-stay-section">
+        <div class="content-wrapper-narrow">
+            <h2>Travel & Stay</h2>
+            <div class="coming-soon">
+                <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <p>Details coming soon</p>
+                <p class="subtext">We're currently finalizing hotel blocks and travel information. Check back soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registry Section -->
+    <section id="registry" class="registry-section">
+        <div class="content-wrapper-narrow">
+            <h2>Registry</h2>
+            <div class="registry-content">
+                <p>Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, we've registered at the following locations:</p>
+                <div class="registry-links">
+                    <a href="#" class="btn btn-secondary" target="_blank" rel="noopener">Registry Link Coming Soon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-names">Braden & Aaryn</p>
+            <p class="footer-date">November 7, 2026</p>
+            <p class="footer-tagline">Can't wait to celebrate with you!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
